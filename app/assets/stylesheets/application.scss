@@ -1,0 +1,32 @@
+// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+@import "bootstrap-sprockets";
+@import "bootstrap";
+$make_horizontal: inline-block;
+$make_vertical: block;
+$common_color: black;
+.main_context{
+  .header{
+    .top_area{
+      background:black;
+      .icon{
+        display:$make_vertical
+      }
+      .nav_bar{
+        display:$make_horizontal
+      }
+      .search_bar{
+        display:$make_horizontal
+      }
+    }
+    .nav_menu{
+      background:$common_color;
+    }
+  }
+
+  .middle{
+  }
+
+  .footer{
+    background:$common_color;
+  }
+}

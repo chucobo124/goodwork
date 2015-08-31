@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Goodwork</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="main_context">
+
+    <div class="header">
+      <div class="top_area">
+        <div class="icon" >this is icon</div>
+        <div class="nav_bar">
+            <%=render partial: "shards/nav_bar"%>
+        </div>
+        <div class="search_bar">serch_bar</div>
+      </div>
+
+      <div class="nav_menu">
+      </div>
+    </div>
+
+    <div class="middle">
+      <%= yield %>
+    </div>
+
+    <div class="footer">
+      this is my footer
+    </div>
+
+  </div>
+</body>
+</html>
