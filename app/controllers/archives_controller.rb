@@ -1,4 +1,4 @@
-class ArchivesController < ApplicationController
+class ArchivesController < FrontBaseController
   def show
   end
   def new
