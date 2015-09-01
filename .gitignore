@@ -47,7 +47,7 @@ bower.json
 
 # Ignore pow environment settings
 .powenv
-
+routefile
 .DS_Store
 
 /public/assets

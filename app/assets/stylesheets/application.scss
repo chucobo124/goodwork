@@ -7,14 +7,7 @@ $common_color: black;
 .main_context{
   .header{
     .top_area{
-      background:black;
-      .icon{
-        display:$make_vertical
-      }
       .nav_bar{
-        display:$make_horizontal
-      }
-      .search_bar{
         display:$make_horizontal
       }
     }
