@@ -1,10 +1,10 @@
-class Users::SessionsController < Devise::SessionsController
+class Admin::Managers::SessionsController < Devise::SessionsController
 # before_filter :configure_sign_in_params, only: [:create]
+
   # GET /resource/sign_in
-  def new
-     super
-     redirect_to root_path
-  end
+  # def new
+  #   super
+  # end
 
   # POST /resource/sign_in
   # def create

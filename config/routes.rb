@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
-  devise_for :users
   root 'homes#index'
   resource :homes
   resource :archives
+  devise_for :users
 namespace :admin do
   root 'homes#show'
   resource :archives
+  devise_for :managers, :controllers => { :sessions => "admin/managers/sessions" }
 end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
